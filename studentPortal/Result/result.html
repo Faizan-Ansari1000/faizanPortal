@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<!-- <body class="bg-gray-100"> -->
+    <body class="bg-gradient-to-r from-purple-500 to-indigo-600 flex flex-col items-center min-h-screen">
+
+
+  <!-- <div class="container mx-auto p-6">
+        <form id="dataform" class="mb-6">
+            <input type="text" id="course" placeholder="Course" required class="border p-2 mb-2">
+            <input type="number" id="marks" placeholder="Marks" required class="border p-2 mb-2">
+            <input type="number" id="totalMarks" placeholder="Total Marks" required class="border p-2 mb-2">
+            <input type="text" id="grade" placeholder="Grade" required class="border p-2 mb-2">
+            <input type="text" id="studentId" placeholder="Student ID" required class="border p-2 mb-2">
+            <button type="button" id="addEntry" class="bg-blue-500 text-white px-4 py-2 rounded">Add Entry</button>
+        </form>
+
+        <div id="cartContainer" class="overflow-x-auto">
+            <table class="min-w-full bg-white border border-gray-300 rounded-lg shadow-lg">
+                <thead>
+                    <tr class="bg-cyan-950 text-white">
+                        <th class="py-3 px-4 text-left font-semibold">Course</th>
+                        <th class="py-3 px-4 text-left font-semibold">Student ID</th>
+                        <th class="py-3 px-4 text-left font-semibold">Marks</th>
+                        <th class="py-3 px-4 text-left font-semibold">Total Marks</th>
+                        <th class="py-3 px-4 text-left font-semibold">Grade</th>
+                    </tr>
+                </thead>
+                <tbody id="cartTableBody"></tbody>
+            </table>
+        </div>
+    </div> -->
+
+
+     <!-- Header Section -->
+     <header class="w-full bg-white shadow-md p-4 rounded-b-lg text-center">
+        <h1 class="text-3xl font-bold text-gray-800">Search Student</h1>
+    </header>
+
+    <!-- Search Section -->
+    <div class="flex flex-col items-center mt-8">
+        <input type="text" id="inp" placeholder="Enter the CNIC" class="p-2 border border-gray-300 rounded-md w-64">
+        <button onclick="searchStudent()" class="mt-2 bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-200">Search</button>
+    </div>
+
+    <!-- Result Section -->
+    <div id="result" class="mt-8 w-full max-w-md mx-auto"></div>
+
+
+    <script type="module" src="/studentPortal/Result/result.js"></script>
+</body>
+</html>
